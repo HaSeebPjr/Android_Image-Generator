@@ -1,2 +1,2 @@
-# Android_Image-Generator
+# Image Generator
 
