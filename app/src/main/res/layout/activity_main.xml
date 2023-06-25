@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical"
+        android:background="@drawable/bg"
+>
+
+    <ImageView android:layout_width="match_parent"
+               android:layout_height="400dp"
+               android:id="@+id/generatedImage"
+    />
+
+    <ProgressBar android:layout_width="100dp" android:layout_height="100dp"
+                 android:indeterminateTint="#02AABB"
+                 android:layout_marginTop="540dp"
+                 android:layout_centerHorizontal="true"
+                 android:visibility="gone"
+                 android:id="@+id/progressBar"
+    />
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:gravity="center"
+    >
+
+        <EditText
+                android:layout_width="320dp"
+                android:layout_height="60dp"
+                android:id="@+id/inputText"
+                android:padding="20dp"
+                android:layout_marginTop="400dp"
+                android:background="@drawable/input_text_bg"
+                android:hint="Enter Image Details"
+                android:textColorHint="@color/hintColor"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+        />
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:text="Go"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/button"
+                android:background="@drawable/button_shape"
+                android:layout_marginTop="30dp"
+
+        />
+
+    </LinearLayout>
+</RelativeLayout>
